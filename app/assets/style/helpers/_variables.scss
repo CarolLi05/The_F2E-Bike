@@ -8,15 +8,15 @@
 // scss-docs-start gray-color-variables
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
+$gray-200: #F8F8F8 !default; //#e9ecef
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
+$gray-500: #C2BCB0 !default; //#adb5bd
 $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
-$black:    #000 !default;
+$gray-800: #9C9689 !default; //#343a40
+$gray-900: #757067 !default; //#212529
+$black:    #4F4F4F !default; //#000
 // scss-docs-end gray-color-variables
 
 // fusv-disable
@@ -36,14 +36,14 @@ $grays: (
 // fusv-enable
 
 // scss-docs-start color-variables
-$blue:    #0d6efd !default;
+$blue:    #56CCF2 !default; //#0d6efd
 $indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
+$purple:  #BB6BD9 !default; //#6f42c1
 $pink:    #d63384 !default;
-$red:     #dc3545 !default;
-$orange:  #fd7e14 !default;
-$yellow:  #ffc107 !default;
-$green:   #198754 !default;
+$red:     #EB5757 !default; //#dc3545
+$orange: #F7931E !default; //#fd7e14
+$yellow: #F1B808 !default; //#ffc107 
+$green: #00C767 !default; //#198754
 $teal:    #20c997 !default;
 $cyan:    #0dcaf0 !default;
 // scss-docs-end color-variables
@@ -62,20 +62,26 @@ $colors: (
   "cyan":       $cyan,
   "white":      $white,
   "gray":       $gray-600,
-  "gray-dark":  $gray-800
+  "gray-dark":  $gray-900,
+  "default":    $gray-800,
+  "light-gray": $gray-200,
+  "black":      $black
 ) !default;
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:       #00cc99; // $blue !default;
+$primary:       $orange; // $blue !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
-$info:          $cyan !default;
+$info:          $blue !default; //$cyan
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
 // scss-docs-end theme-color-variables
+$max:           $purple;
+$default:       $gray-800;
+$light-gray:    $gray-200;
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
@@ -86,7 +92,11 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "max":        $max,
+  "default":    $default,
+  "light-gray": $light-gray,
+  "black":      $black
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -215,7 +225,7 @@ $escaped-characters: (
 
 $enable-caret:                true !default;
 $enable-rounded:              true !default;
-$enable-shadows:              false !default;
+$enable-shadows:              true !default;
 $enable-gradients:            false !default;
 $enable-transitions:          true !default;
 $enable-reduced-motion:       true !default;
@@ -286,7 +296,7 @@ $body-text-align:           null !default;
 // Style anchor elements.
 
 $link-color:                              $primary !default;
-$link-decoration:                         underline !default;
+$link-decoration:                         none !default; //underline
 $link-shade-percentage:                   20% !default;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration:                   null !default;
@@ -367,12 +377,12 @@ $border-widths: (
   5: 5px
 ) !default;
 
-$border-color:                $gray-300 !default;
+$border-color:               #DDDBD7 !default; //$gray-300
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
-$border-radius:               .25rem !default;
-$border-radius-sm:            .2rem !default;
+$border-radius:               .2rem !default; //.25
+$border-radius-sm:            .25rem !default; //.2
 $border-radius-lg:            .3rem !default;
 $border-radius-pill:          50rem !default;
 // scss-docs-end border-radius-variables
