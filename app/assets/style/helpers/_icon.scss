@@ -12,6 +12,10 @@
         url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
 }
 
+.material-icons {
+    vertical-align: top !important;
+}
+
 /* Rules for sizing the icon. */
 .material-icons.md-18 {
     font-size: 18px;
@@ -19,6 +23,10 @@
 
 .material-icons.md-24 {
     font-size: 24px;
+}
+
+.material-icons.md-28 {
+    font-size: 28px;
 }
 
 .material-icons.md-36 {

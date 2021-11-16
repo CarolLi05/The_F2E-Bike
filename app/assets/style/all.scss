@@ -1,7 +1,11 @@
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "./helpers/variables";
+@import "./helpers/mixins";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 @import "./helpers/icon";
 
 
 // @import './layout/index.scss'
+@import './layout';
+@import "./components";
+@import "./forms";

@@ -1,0 +1,26 @@
+
+//圖片連結隱藏文字
+@mixin hide-text {
+    text-indent: 101%;
+    /* 首行縮排 */
+    overflow: hidden;
+    /* 自動隱藏超出的文字或圖片 */
+    white-space: nowrap;
+}
+
+//省略字數(搭配行數)
+@mixin ellipsis($rows) {
+    display: -webkit-box;
+    -webkit-line-clamp: $rows;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+//position-absolute center
+@mixin position-absolute-center-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
