@@ -14030,6 +14030,142 @@ fieldset:disabled .btn {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.hover-primary:hover {
+  color: #F7931E;
+}
+
+.hover-bg-primary:hover {
+  background-color: #F7931E;
+}
+
+.hover-secondary:hover {
+  color: #6c757d;
+}
+
+.hover-bg-secondary:hover {
+  background-color: #6c757d;
+}
+
+.hover-success:hover {
+  color: #00C767;
+}
+
+.hover-bg-success:hover {
+  background-color: #00C767;
+}
+
+.hover-info:hover {
+  color: #56CCF2;
+}
+
+.hover-bg-info:hover {
+  background-color: #56CCF2;
+}
+
+.hover-warning:hover {
+  color: #F1B808;
+}
+
+.hover-bg-warning:hover {
+  background-color: #F1B808;
+}
+
+.hover-danger:hover {
+  color: #EB5757;
+}
+
+.hover-bg-danger:hover {
+  background-color: #EB5757;
+}
+
+.hover-light:hover {
+  color: #f8f9fa;
+}
+
+.hover-bg-light:hover {
+  background-color: #f8f9fa;
+}
+
+.hover-dark:hover {
+  color: #757067;
+}
+
+.hover-bg-dark:hover {
+  background-color: #757067;
+}
+
+.hover-max:hover {
+  color: #BB6BD9;
+}
+
+.hover-bg-max:hover {
+  background-color: #BB6BD9;
+}
+
+.hover-default:hover {
+  color: #9C9689;
+}
+
+.hover-bg-default:hover {
+  background-color: #9C9689;
+}
+
+.hover-light-gray:hover {
+  color: #F8F8F8;
+}
+
+.hover-bg-light-gray:hover {
+  background-color: #F8F8F8;
+}
+
+.hover-black:hover {
+  color: #4F4F4F;
+}
+
+.hover-bg-black:hover {
+  background-color: #4F4F4F;
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    width: 100%;
+  }
+}
+
+.content {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .content {
+    margin-left: 247px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    display: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: auto !important;
+        -ms-flex-align: auto !important;
+            align-items: auto !important;
+  }
+}
+
 .navbar-brand a {
   background: url(../images/Logo-desktop.svg) no-repeat;
   width: 170px;
@@ -14050,6 +14186,57 @@ fieldset:disabled .btn {
     width: 40px;
     background-size: contain;
   }
+}
+
+.sidebar {
+  width: 247px;
+  min-width: 247px;
+  max-width: 247px;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1030;
+  background-color: #fff;
+  padding-top: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media (max-width: 991.98px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+.sidebar-brand {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.sidebar-brand a {
+  background: url(../images/Logo-desktop.svg) no-repeat;
+  width: 170px;
+  height: 40px;
+  background-size: cover;
+  display: block;
+  text-indent: 101%;
+  /* 首行縮排 */
+  overflow: hidden;
+  /* 自動隱藏超出的文字或圖片 */
+  white-space: nowrap;
+  background-position: center left;
+}
+
+.sidebar-link {
+  font-size: 1.125rem;
+  display: inline-block;
+  color: #C2BCB0;
+  margin-bottom: 30px;
+}
+
+.sidebar-link:hover {
+  color: #F7931E;
 }
 
 .btn-primary {
