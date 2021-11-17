@@ -1,0 +1,15 @@
+
+.wrapper{
+    @include media-breakpoint-up(lg) {
+        display: flex;
+        align-items: stretch;
+        width: 100%;
+    }
+}
+
+.content{
+    width: 100%;
+    @include media-breakpoint-up(lg) {
+        margin-left: 247px;
+    }
+}

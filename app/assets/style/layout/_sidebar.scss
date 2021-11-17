@@ -1,0 +1,42 @@
+
+.sidebar{
+    width: 247px;
+    min-width: 247px;
+    max-width: 247px;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $zindex-fixed;
+    background-color: $white;
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    @include media-breakpoint-down(lg) {
+        display: none;
+    }
+}
+
+.sidebar-brand {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    a {
+        background: url(../images/Logo-desktop.svg) no-repeat;
+        width: 170px;
+        height: 40px;
+        background-size: cover;
+        display: block;
+        @include hide-text;
+        background-position: center left;
+    }
+}
+
+.sidebar-link{
+    font-size: $font-size-lg;
+    display: inline-block;
+    color: $gray-500;
+    margin-bottom: 30px;
+    &:hover{
+        color: $primary;
+    }
+}

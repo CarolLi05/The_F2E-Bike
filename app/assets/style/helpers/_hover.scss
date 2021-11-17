@@ -1,0 +1,14 @@
+
+//button hover
+@each $color , $value in $theme-colors {
+    .hover-#{$color} {
+        &:hover{
+            color: $value;
+        }
+    }
+    .hover-bg-#{$color} {
+        &:hover{
+            background-color: $value;
+        }
+    }
+}
