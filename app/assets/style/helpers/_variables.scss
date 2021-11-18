@@ -96,7 +96,8 @@ $theme-colors: (
   "max":        $max,
   "default":    $default,
   "light-gray": $light-gray,
-  "black":      $black
+  "black":      $black,
+  "gray-300":   $gray-300,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -267,9 +268,11 @@ $spacers: (
   5: $spacer * 1.25, //20
   6: $spacer * 1.5, //24
   7: $spacer * 1.75, //28
-  8: $spacer * 2, //32
-  9: $spacer * 2.25, //36
-  10: $spacer * 3, //48
+  8: $spacer * 1.875, //30
+  9: $spacer * 2, //32
+  10: $spacer * 2.25, //36
+  11: $spacer * 2.5, //40
+  12: $spacer * 3, //48
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -367,7 +370,7 @@ $gutters: $spacers !default;
 
 // Container padding
 
-$container-padding-x: $grid-gutter-width * .5 !default;
+$container-padding-x: $grid-gutter-width * 1.25 !default; //.5
 
 
 // Components
@@ -476,9 +479,10 @@ $font-sizes: (
   4: $h4-font-size,
   5: $h5-font-size,
   6: $h6-font-size,
-  xs: $font-size-xs,
-  sm: $font-size-sm,
-  lg: $font-size-lg
+  "xs": $font-size-xs,
+  "sm": $font-size-sm,
+  "lg": $font-size-lg,
+  'reset': inherit
 ) !default;
 // scss-docs-end font-sizes
 
@@ -1281,7 +1285,7 @@ $modal-header-padding:              $modal-header-padding-y $modal-header-paddin
 
 $modal-sm:                          300px !default;
 $modal-md:                          500px !default;
-$modal-lg:                          800px !default;
+$modal-lg:                          768px !default;
 $modal-xl:                          1140px !default;
 
 $modal-fade-transform:              translate(0, -50px) !default;

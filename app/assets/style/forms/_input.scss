@@ -1,8 +1,9 @@
 
-.search-group-fav{
-    position: absolute;
+.input-icon-start{
+    @include input-icon-position;
+    right: 0;
 }
-
-.search-group-nearby{
-    position: absolute;
+.input-icon-end{
+    @include input-icon-position;
+    left: unset;
 }

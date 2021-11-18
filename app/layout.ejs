@@ -41,8 +41,8 @@
           </ul>
         </div>
       </nav>
-      <nav class="navbar navbar-expand-lg navbar-light bg-white" id="main-navbar">
-        <div class="container">
+      <nav class="navbar navbar-expand-sm navbar-light bg-white pe-md-8 py-4" id="main-navbar">
+        <div class="container pb-4 pb-sm-0 ">
           <h1 class="navbar-brand py-2 m-0">
             <a class="" href="#">UBike Tour</a>
           </h1>
@@ -50,31 +50,37 @@
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
-        <div class="d-flex flex-column bg-light">
-          <div class="container">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">搜尋站點</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">單車旅遊</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">我的最愛</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    <span class="material-icons">person</span>
-                    登入
-                  </a>
-                </li>
-              </ul>
-            </div>
+        <div class="d-flex align-items-center w-100 mx-auto nav-list">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">
+                  <span class="material-icons">pin_drop</span>
+                  搜尋站點
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span class="material-icons">map</span>
+                  單車旅遊
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span class="material-icons">star_rate</span>
+                  我的最愛
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link border-bottom-0" href="#">
+                  <span class="material-icons">person</span>
+                  登入
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-      </nav>
-  
+      </nav>  
       <%- contents %>
     </div>
 

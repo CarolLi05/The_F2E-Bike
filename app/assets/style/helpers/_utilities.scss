@@ -516,6 +516,7 @@ $utilities: map-merge(
     // scss-docs-end utils-color
     // scss-docs-start utils-bg-color
     "background-color": (
+      responsive: true,
       property: background-color,
       class: bg,
       values: map-merge(
@@ -603,6 +604,13 @@ $utilities: map-merge(
       values:(
         cover: cover,
         contain: contain,
+      )
+    ),
+    "cursor":(
+      property: cursor,
+      class: cursor,
+      values:(
+        pointer: pointer,
       )
     )
     // scss-docs-end utils-visibility

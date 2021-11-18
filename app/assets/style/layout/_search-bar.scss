@@ -1,0 +1,31 @@
+
+$search-bar-input-padding-x: 2.25rem;
+
+.search-bar{
+    background-color: theme-color("light");
+    padding-top: map-get($spacers , 11);
+    padding-top: map-get($spacers , 8);
+}
+
+.search-bar{
+    input{
+        padding-left: 5rem;
+        padding-right: $search-bar-input-padding-x;
+    }
+    select{
+        padding-left: $search-bar-input-padding-x;
+        padding-right: 1rem;
+    }
+
+    input,select{
+        font-size: $h5-font-size;
+    }
+}
+
+.search-label{
+    width: 67px;
+}
+
+.search-bar-icon{
+    width: 24px;
+}

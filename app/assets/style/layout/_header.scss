@@ -3,10 +3,10 @@
     @include media-breakpoint-up(lg) {
         display: none;
     }
-    @include media-breakpoint-down(md) {
-        flex-direction: column;
-        align-items: auto !important;
-    }
+    // @include media-breakpoint-down(md) {
+    //     flex-direction: column;
+    //     align-items: auto !important;
+    // }
 }
 
 .navbar-brand {
@@ -23,6 +23,25 @@
             background: url(../images/Logo-mobile.svg) no-repeat;
             width: 40px;
             background-size: contain;
+        }
+    }
+}
+
+.nav-list{
+    background-color: theme-colors("light");
+    @include media-breakpoint-up(sm) {
+        background-color: $white;
+    }
+    .nav-link{
+        padding-top: map-get($spacers, 5);
+        padding-bottom: map-get($spacers, 5);
+        padding-left: map-get($spacers, 8);
+        padding-right: map-get($spacers, 8);
+        border-bottom: $border-width solid $border-color;
+        @include media-breakpoint-up(sm) {
+            padding-top: map-get($spacers, 2);
+            padding-bottom: map-get($spacers, 2);
+            border-bottom: none;
         }
     }
 }
