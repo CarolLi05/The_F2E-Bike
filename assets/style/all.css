@@ -15068,6 +15068,7 @@ fieldset:disabled .btn {
 
 .content {
   width: 100%;
+  height: 100vh;
 }
 
 @media (min-width: 992px) {
@@ -15079,7 +15080,13 @@ fieldset:disabled .btn {
 .search-bar {
   background-color: theme-color("light");
   padding-top: 2.5rem;
-  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+}
+
+@media (max-width: 991.98px) {
+  .search-bar {
+    background-color: transparent;
+  }
 }
 
 .search-bar input {
