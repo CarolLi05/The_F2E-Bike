@@ -4,7 +4,10 @@ $search-bar-input-padding-x: 2.25rem;
 .search-bar{
     background-color: theme-color("light");
     padding-top: map-get($spacers , 11);
-    padding-top: map-get($spacers , 8);
+    padding-bottom: map-get($spacers , 8);
+    @include media-breakpoint-down(lg) {
+        background-color: transparent;
+    }
 }
 
 .search-bar{

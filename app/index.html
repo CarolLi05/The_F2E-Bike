@@ -5,37 +5,37 @@ engine: ejs
 current: index
 ---
 
-<div class="content">
-  <nav class="search-bar">
-    <form action="" class="" id="search_form">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-5 position-relative">
-            <span class="search-label input-icon-start">尋找站點</span>
-            <input type="text" class="form-control main-search" placeholder="站點名稱">
-            <a href="#fav_modal" class="cursor-pointer search-bar-icon input-icon-end material-icons-outlined add-fav" data-bs-toggle="modal" style="right: 3rem;">star_border</a>
-            <a href="#nearby_modal" class="cursor-pointer search-bar-icon input-icon-end material-icons-outlined add-nearby" data-bs-toggle="modal">pin_drop</a>
-          </div>
-          <div class="col-2 position-relative">
-            <span class="material-icons search-bar-icon input-icon-start city-select-icon">place</span>
-            <select name="city_select" id="city_select" class="form-select search-bar-select city-select">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-            </select>
-          </div>
-          <div class="col-2 position-relative">
-            <span class="material-icons-outlined search-bar-icon input-icon-start level-select">military_tech</span>
-            <select name="level_select" id="level_select" class="form-select search-bar-select level-select">
-              <option value="1">入門</option>
-              <option value="2">新手</option>
-              <option value="3">一般</option>
-              <option value="4">挑戰</option>
-              <option value="5">極限</option>
-            </select>
-          </div>
+<div class="content bg-primary map_area" id="map_area">
+  <div class="search-bar">
+    <div class="container-fluid">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-9 col-lg-5 position-relative">
+          <span class="search-label input-icon-start">尋找站點</span>
+          <input type="text" class="form-control main-search" placeholder="站點名稱">
+          <a href="#fav_modal" class="cursor-pointer search-bar-icon input-icon-end material-icons-outlined add-fav" data-bs-toggle="modal" style="right: 3rem;">star_border</a>
+          <a href="#nearby_modal" class="cursor-pointer search-bar-icon input-icon-end material-icons-outlined add-nearby" data-bs-toggle="modal">pin_drop</a>
         </div>
-    </form>
-  </nav>
+        <div class="col-2 position-relative d-none d-lg-block">
+          <span class="material-icons search-bar-icon input-icon-start city-select-icon">place</span>
+          <select name="city_select" id="city_select" class="form-select search-bar-select city-select">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+        <div class="col-2 position-relative d-none d-lg-block">
+          <span class="material-icons-outlined search-bar-icon input-icon-start level-select">military_tech</span>
+          <select name="level_select" id="level_select" class="form-select search-bar-select level-select">
+            <option value="1">入門</option>
+            <option value="2">新手</option>
+            <option value="3">一般</option>
+            <option value="4">挑戰</option>
+            <option value="5">極限</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
   
   <!--Favorite Modal -->
   <div class="modal fade" id="fav_modal" tabindex="-1" aria-labelledby="fav_modal_label" aria-hidden="true">
