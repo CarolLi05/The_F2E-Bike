@@ -5,15 +5,15 @@ engine: ejs
 current: index
 ---
 
-<div class="content bg-primary map_area" id="map_area">
+<div class="content bg-primary" id="">
   <div class="search-bar">
     <div class="container-fluid">
       <div class="row justify-content-center align-items-center">
         <div class="col-md-9 col-lg-5 position-relative">
           <span class="search-label input-icon-start">尋找站點</span>
           <input type="text" class="form-control main-search" placeholder="站點名稱">
-          <a href="#fav_modal" class="cursor-pointer search-bar-icon input-icon-end material-icons-outlined add-fav" data-bs-toggle="modal" style="right: 3rem;">star_border</a>
-          <a href="#nearby_modal" class="cursor-pointer search-bar-icon input-icon-end material-icons-outlined add-nearby" data-bs-toggle="modal">pin_drop</a>
+          <a href="#fav_modal" class="cursor-pointer search-bar-icon text-primary input-icon-end material-icons-outlined add-fav" data-bs-toggle="modal" style="right: 3rem;">star_border</a>
+          <a href="#nearby_modal" class="cursor-pointer search-bar-icon text-primary input-icon-end material-icons-outlined add-nearby" data-bs-toggle="modal">pin_drop</a>
         </div>
         <div class="col-2 position-relative d-none d-lg-block">
           <span class="material-icons search-bar-icon input-icon-start city-select-icon">place</span>
@@ -131,4 +131,6 @@ current: index
       </div>
     </div>
   </div>
+
+  <div class="main_map" id="main_map"></div>
 </div>

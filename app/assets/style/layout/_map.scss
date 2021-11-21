@@ -1,0 +1,14 @@
+
+#map_desktop {
+    height: calc(100vh - 126px);
+    @include media-breakpoint-down(lg) {
+        // display: none;
+        height: calc(100vh - 73px);
+    }
+}
+
+// #map_mobile{
+    // @include media-breakpoint-up(lg) {
+    //     height: 
+    // }
+// }

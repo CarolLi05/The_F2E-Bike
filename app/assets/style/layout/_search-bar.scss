@@ -2,11 +2,15 @@
 $search-bar-input-padding-x: 2.25rem;
 
 .search-bar{
-    background-color: theme-color("light");
+    background-color: $light;
     padding-top: map-get($spacers , 11);
     padding-bottom: map-get($spacers , 8);
+    z-index: 1999;
     @include media-breakpoint-down(lg) {
         background-color: transparent;
+        position: absolute;
+        width: 100%;
+        top: 73px;
     }
 }
 
