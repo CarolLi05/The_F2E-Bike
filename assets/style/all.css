@@ -15046,6 +15046,10 @@ fieldset:disabled .btn {
   border-bottom: 1px solid #DDDBD7;
 }
 
+.nav-list .nav-link:hover {
+  color: #F7931E !important;
+}
+
 @media (min-width: 576px) {
   .nav-list .nav-link {
     padding-top: 0.5rem;
@@ -15068,7 +15072,7 @@ fieldset:disabled .btn {
 
 .content {
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 @media (min-width: 992px) {
