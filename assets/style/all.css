@@ -15077,15 +15077,29 @@ fieldset:disabled .btn {
   }
 }
 
+#map_desktop {
+  height: calc(100vh - 126px);
+}
+
+@media (max-width: 991.98px) {
+  #map_desktop {
+    height: calc(100vh - 73px);
+  }
+}
+
 .search-bar {
-  background-color: theme-color("light");
+  background-color: #f8f9fa;
   padding-top: 2.5rem;
   padding-bottom: 1.875rem;
+  z-index: 1999;
 }
 
 @media (max-width: 991.98px) {
   .search-bar {
     background-color: transparent;
+    position: absolute;
+    width: 100%;
+    top: 73px;
   }
 }
 
